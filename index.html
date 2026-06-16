@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Showcase | Academic Demo Page</title>
+    <link rel="icon" type="image/png" href="assets\icons\logo.png" />
+    <meta
+      name="description"
+      content="A deployable academic project page for showcasing papers, demos, and method highlights."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="https://hirol.sjtu.edu.cn/" target="_blank" rel="noreferrer">HIROL Lab</a>
+        <nav class="nav">
+          <a href="#overview">Overview</a>
+          <a href="#method">Method</a>
+          <a href="#tracking">Tracking</a>
+          <a href="#demos">Demos</a>
+          <a href="#results">Results</a>
+          <!-- <a href="#acknowledgement">Acknowledgement</a> -->
+          <a href="#citation">Citation</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow" id="hero-eyebrow"></p>
+            <h1 id="hero-title"></h1>
+            <p class="hero-subtitle" id="hero-subtitle"></p>
+            <div class="author-list" id="author-list"></div>
+            <div class="affiliation-list" id="affiliation-list"></div>
+            <div class="hero-links" id="hero-links"></div>
+          </div>
+
+          <aside class="hero-card">
+            <p class="card-label">Humanoid Loco-Manipulation Policy Learning <strong class="text-strong">Without Any Teleoperation Data</strong></p>
+            <h2 id="featured-title"></h2>
+            <p id="featured-description"></p>
+            <div class="video-frame" id="featured-media"></div>
+          </aside>
+        </section>
+
+        <section class="section" id="overview">
+          <div class="section-heading">
+            <h2>Abstract</h2>
+          </div>
+          <div class="overview-grid">
+            <div class="overview-card">
+              <p class="mono-label">Abstract</p>
+              <p id="abstract-text"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="method">
+          <div class="section-heading">
+            <h2>Method Overview</h2>
+          </div>
+          <div class="method-steps" id="method-steps"></div>
+        </section>
+
+        <section class="section" id="tracking">
+          <div class="section-heading">
+            <h2>Global Tracking Whole-Body Controller</h2>
+          </div>
+          <div class="tracking-carousel">
+            <button class="carousel-arrow carousel-prev" id="tracking-prev" type="button" aria-label="Previous tracking videos">&#8249;</button>
+            <div class="tracking-track" id="tracking-track"></div>
+            <button class="carousel-arrow carousel-next" id="tracking-next" type="button" aria-label="Next tracking videos">&#8250;</button>
+          </div>
+        </section>
+
+        <section class="section" id="demos">
+          <div class="section-heading">
+            <h2>Loco-Manipulation Skills</h2>
+          </div>
+          <div class="demo-browser">
+            <div class="demo-task-tabs" id="demo-task-tabs"></div>
+            <div class="demo-browser-stage" id="demo-browser-stage"></div>
+          </div>
+        </section>
+
+        <section class="section" id="results">
+          <div class="section-heading">
+            <h2>Results and Analysis</h2>
+          </div>
+          <div class="results-panel">
+            <div class="results-figures" id="results-figures"></div>
+            <div class="results-findings">
+              <h3>Key Findings</h3>
+              <ul class="bullet-list" id="results-findings"></ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- <footer class="footer section" id="acknowledgement">
+        <div>
+          <h2 id="contact-title"></h2>
+          <p id="contact-description"></p>
+        </div>
+      </footer> -->
+
+      <section class="section citation-section" id="citation">
+        <div class="section-heading">
+          <h2>Citation</h2>
+        </div>
+        <pre class="citation-block"><code id="citation-bibtex"></code></pre>
+      </section>
+    </div>
+
+    <div class="media-modal hidden" id="media-modal" aria-hidden="true">
+      <button class="modal-close" id="modal-close" aria-label="Close media viewer">Close</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+
+    <template id="hero-link-template">
+      <div class="hero-link-card">
+        <div class="hero-link-main">
+          <img class="hero-link-icon" alt="" />
+          <p class="hero-link-label"></p>
+        </div>
+        <p class="hero-link-note"></p>
+      </div>
+    </template>
+
+    <template id="method-template">
+      <article class="method-step">
+        <span class="step-number"></span>
+        <div class="method-step-copy">
+          <h3></h3>
+          <p></p>
+        </div>
+        <div class="method-step-media"></div>
+      </article>
+    </template>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
