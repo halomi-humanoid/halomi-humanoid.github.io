@@ -1,3 +1,7 @@
 debug/
 .codex/
 .agents/
+
+# Local/raw video exports. Commit the compressed web-ready version instead.
+assets/videos/summary.mp4
+assets/videos/summary_h264.mp4

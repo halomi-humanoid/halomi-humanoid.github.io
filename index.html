@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -57,7 +57,6 @@
           </div>
           <div class="overview-grid">
             <div class="overview-card">
-              <p class="mono-label">Abstract</p>
               <p id="abstract-text"></p>
             </div>
           </div>
@@ -98,10 +97,18 @@
           <div class="results-panel">
             <div class="results-figures" id="results-figures"></div>
             <div class="results-findings">
-              <h3>Key Findings</h3>
+              <ul class="results-summary" id="results-summary"></ul>
+              <h3>Generalization and Robustness Test</h3>
               <ul class="bullet-list" id="results-findings"></ul>
             </div>
           </div>
+        </section>
+
+        <section class="section" id="failure-cases">
+          <div class="section-heading">
+            <h2>Overheat Failure</h2>
+          </div>
+          <div class="failure-strip" id="failure-strip"></div>
         </section>
       </main>
 

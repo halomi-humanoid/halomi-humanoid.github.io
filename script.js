@@ -28,27 +28,24 @@ const siteData = {
     ]
   },
   featured: {
-    title: "Research Summary",
-    description:
-      // "Place your teaser video, main experiment, or highlight reel here. This block should carry the strongest first impression on the page.",
-      "",
-      embedUrl: "",
-      videoUrl: "",
-      imageUrl: "assets/figures/teaser_compressed.png",
-      imageAlt: "Research summary visual",
-      posterTitle: "Add your teaser video or poster",
-      posterText:
-      "You can point this area to a YouTube embed, a Bilibili embed, or a local MP4 in assets/videos/."
+    title: "Technical Summary Video",
+
+    embedUrl: "",
+    videoUrl: "assets/videos/summary_web.mp4",
+    imageUrl: "",
+    imageAlt: "Technical summary video",
+    posterTitle: "Technical Summary Video",
+    posterText: ""
   },
   abstract:
     "Human demonstrations, which can be collected at scale and naturally capture active hand-eye coordination, are a promising data source for learning humanoid loco-manipulation. However, directly transferring human demonstrations to humanoids requires a <strong class=\"text-strong\">precise world-frame tracking controller</strong class>, which is often <strong class=\"text-strong\">brittle under out-of-distribution (OOD) targets</strong class>, while <strong class=\"text-strong\">human-to-humanoid gaps</strong class> persist in both egocentric observation and action execution. To address these challenges, we present <strong class=\"text-strong\">HALOMI</strong class>, a scalable framework that effectively learns <strong class=\"text-strong\">humanoid loco-manipulation with active perception from human demonstrations</strong class>. HALOMI extends Universal Manipulation Interface (UMI) with egocentric sensing to collect ego-view observations and head-hand trajectories at scale. We further propose a <strong class=\"text-strong\">manifold-constrained controller</strong class> that plans in a learned latent behavior manifold to enable precise and robust head-hand tracking in the world frame. To bridge the human–to-humanoid gap, we perform <strong class=\"text-strong\">ego-view alignment</strong class> and introduce a <strong class=\"text-strong\">controller-aware reference trajectory adaptation</strong class> to reduce mismatch in both observation and action execution. We validate HALOMI on a Unitree G1 humanoid robot with an actuated neck across five real-world tasks involving <strong class=\"text-strong\">navigation, grasping, bimanual manipulation, whole-body coordination, and dynamic behaviors</strong class>. Across the three quantitatively evaluated tasks, HALOMI achieves an <strong class=\"text-strong\">average success rate of 85\%</strong class>, while additional qualitative demonstrations show its ability to support dynamic tossing and deep-squat grasping.",
   trackingVideos: [
     {
-      title: "Natural Walking11",
+      title: "Natural Walking",
       summary: "The consistent translation command for all upper body goals stimulates the human-like natural walking by the RL controller.",
       accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
       embedUrl: "",
-      videoUrl: "assets/videos/loco/walking.mp4"
+      videoUrl: "assets/videos/loco/walk.mp4"
     },
     {
       title: "Standing with hand motion",
@@ -338,29 +335,37 @@ const siteData = {
         caption: "Quantitative Ealuation on Transfer Towel to Basket"
       }
     ],
+    summary: [
+      "Best overall success across all three evaluated real-world tasks.",
+      "Active perception is essential for reliable transfer.",
+      "Generalizes to unseen setups and remains robust under perturbation."
+    ],
     findings: [
       {
-        text: '<strong class="text-strong">Active perception supports multi-stage gaze changes:</strong> Active head-view control enables the robot to shift visual focus across search, grasping, transport, and placement stages, especially when task-relevant objects move out of the initial field of view.',
-        videoUrl: "assets/videos/towel/towel2_left.mp4",
-        embedUrl: ""
-      },
-      {
-        text: '<strong class="text-strong">Active perception is necessary for human-to-humanoid transfer:</strong> Removing active neck control significantly degrades transfer performance, reducing success rates from 90% to 30% in Bag Transfer, 85% to 20% in Pick Bread and Place, and 80% to 10% in Transfer Towel to Basket.',
-        videoUrl: "assets/videos/towel/active_neck_comparison.mp4",
-        embedUrl: ""
-      },
-      {
-        text: '<strong class="text-strong">Sparse hand-head targets enable position generalization and whole-body reach:</strong> The three-point interface allows the VLA to specify task-level hand-eye intent while the controller completes locomotion and posture adaptation, achieving 60% success on OOD cabinet placements and extending manipulation beyond arm-only reach.',
+        text: "",
         videoUrl: "assets/videos/bread/bread_disturbance.mp4",
         embedUrl: ""
-      },
-      {
-        text: '<strong class="text-strong">Controller-aware reference trajectory adaptation improves execution quality:</strong> Reference trajectory adaptation reduces the human-to-humanoid execution mismatch, improving tracking error by 6.725% on average and increasing task success from 75% to 85% in Pick Bread and Place and from 75% to 80% in Transfer Towel to Basket.',
-        videoUrl: "",
-        embedUrl: ""
-      },
+      }
     ]
   },
+  failureCases: [
+    {
+      title: "Without View Alignment",
+      videoUrl: "assets/videos/bag/bag_failure_view_align.mp4"
+    },
+    {
+      title: "Human Disturbance",
+      videoUrl: "assets/videos/loco/human_disturbance.mp4"
+    },
+    {
+      title: "Infeasible Motion",
+      videoUrl: "assets/videos/loco/infeasible_motion.mp4"
+    },
+    {
+      title: "Without Active View",
+      videoUrl: "assets/videos/towel/active_neck_comparison.mp4"
+    }
+  ],
   // contact: {
   //   title: "Acknowledgement",
   //   description:
@@ -846,12 +851,23 @@ function renderResults() {
     figures.appendChild(card);
   });
 
+  const summary = $("#results-summary");
+  summary.innerHTML = "";
+  (siteData.results.summary || []).forEach((point) => {
+    const item = document.createElement("li");
+    item.textContent = point;
+    summary.appendChild(item);
+  });
+
   const findings = $("#results-findings");
   findings.innerHTML = "";
   siteData.results.findings.forEach((finding) => {
     const text = typeof finding === "string" ? finding : finding.text;
     const item = document.createElement("li");
     item.innerHTML = text;
+    if (!text) {
+      item.classList.add("media-only");
+    }
 
     if (typeof finding === "object" && (finding.embedUrl || finding.videoUrl)) {
       const media = document.createElement("div");
@@ -880,6 +896,35 @@ function renderResults() {
     }
 
     findings.appendChild(item);
+  });
+}
+
+function renderFailureCases() {
+  const root = $("#failure-strip");
+  if (!root) {
+    return;
+  }
+
+  root.innerHTML = "";
+  (siteData.failureCases || []).forEach((entry) => {
+    const card = document.createElement("article");
+    card.className = "failure-card";
+
+    const media = document.createElement("div");
+    media.className = "failure-media";
+    const video = document.createElement("video");
+    video.src = entry.videoUrl;
+    video.controls = true;
+    video.preload = "metadata";
+    video.playsInline = true;
+    media.appendChild(video);
+
+    const title = document.createElement("h3");
+    title.textContent = entry.title;
+
+    card.appendChild(media);
+    card.appendChild(title);
+    root.appendChild(card);
   });
 }
 
@@ -914,6 +959,7 @@ renderTrackingVideos();
 renderDemos();
 renderMethod();
 renderResults();
+renderFailureCases();
 // renderContact();
 renderCitation();
 bindModal();
