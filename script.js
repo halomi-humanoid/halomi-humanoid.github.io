@@ -177,47 +177,69 @@ const siteData = {
         {
           title: "Towel Transfer to Basket",
           summary:
-            "Find and grasp towel and transfer to the top of left basket",
+            "Find and grasp the towel, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
-          posterTitle: "Successful Trial",
-          posterText: "Transfer the green/grey towel to the basket on the left",
+          posterTitle: "Towel Trial 1",
+          posterText: "Towel transfer rollout with active perception",
           tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
           embedUrl: "",
-          videoUrl: "assets/videos/towel/towel2_left.mp4"
+          videoUrl: "assets/videos/towel/towel2.mp4"
         },
         {
           title: "Towel Transfer to Basket",
           summary:
-            "Find and grasp towel and transfer to the top of right basket",
+            "Find and grasp the towel, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
-          posterTitle: "Successful Trial",
-          posterText: "Transfer the green/grey towel to the basket on the right",
+          posterTitle: "Towel Trial 2",
+          posterText: "Towel transfer rollout with active perception",
           tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
           embedUrl: "",
-          videoUrl: "assets/videos/towel/towel2_right.mp4"
+          videoUrl: "assets/videos/towel/towel3.mp4"
         },
         {
-          title: "Towel Transfer to Cabinet",
+          title: "Towel Transfer to Basket",
           summary:
-            "Find and grasp towel and transfer to the top of left cabinet",
+            "Find and grasp the towel, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
-          posterTitle: "Successful Trial",
-          posterText: "Transfer the white/grey towel to the top surface of cabinet on the left",
+          posterTitle: "Towel Trial 3",
+          posterText: "Towel transfer rollout with active perception",
           tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
           embedUrl: "",
-          videoUrl: "assets/videos/towel/towel1_left.mp4"
+          videoUrl: "assets/videos/towel/towel4.mp4"
         },
-        // {
-        //   title: "Towel Transfer to Cabinet",
-        //   summary:
-        //     "Find and grasp towel and transfer to the top of right cabinet",
-        //   accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
-        //   posterTitle: "Successful Trial",
-        //   posterText: "Transfer the white/grey towel to the top surface of cabinet on the right",
-        //   tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
-        //   embedUrl: "",
-        //   videoUrl: "assets/videos/towel/tower1_right.mp4"
-        // },
+        {
+          title: "Towel Transfer to Basket",
+          summary:
+            "Find and grasp the towel, then transfer it to the target basket.",
+          accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
+          posterTitle: "Towel Trial 4",
+          posterText: "Towel transfer rollout with active perception",
+          tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
+          embedUrl: "",
+          videoUrl: "assets/videos/towel/towel5.mp4"
+        },
+        {
+          title: "Towel Transfer to Basket",
+          summary:
+            "Find and grasp the towel, then transfer it to the target basket.",
+          accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
+          posterTitle: "Towel Trial 5",
+          posterText: "Towel transfer rollout with active perception",
+          tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
+          embedUrl: "",
+          videoUrl: "assets/videos/towel/towel6.mp4"
+        },
+        {
+          title: "Towel Transfer to Basket",
+          summary:
+            "Find and grasp the towel, then transfer it to the target basket.",
+          accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
+          posterTitle: "Towel Trial 6",
+          posterText: "Towel transfer rollout with active perception",
+          tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
+          embedUrl: "",
+          videoUrl: "assets/videos/towel/towel7.mp4"
+        },
         
       ]
     },
