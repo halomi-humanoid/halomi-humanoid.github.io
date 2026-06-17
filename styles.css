@@ -15,11 +15,11 @@
   --hero-width: 1120px;
   --fs-micro: 0.72rem;
   --fs-xs: 0.78rem;
-  --fs-sm: 0.88rem;
-  --fs-base: 0.96rem;
-  --fs-md: 1.05rem;
-  --fs-lg: 1.22rem;
-  --fs-xl: 1.5rem;
+  --fs-sm: 0.92rem;
+  --fs-base: 1.02rem;
+  --fs-md: 1.12rem;
+  --fs-lg: 1.3rem;
+  --fs-xl: 1.58rem;
   --fs-subsection: 1.75rem;
   --fs-section: 2.6rem;
   --fs-hero-mark: 3.35rem;
@@ -121,9 +121,10 @@ button {
   font-family: "Manrope", sans-serif;
   font-size: var(--fs-hero-mark);
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0.08em;
   line-height: 1.08;
   color: #0f172a;
+  text-indent: 0.08em;
 }
 
 .hero h1,
@@ -170,7 +171,7 @@ button {
 
 .author-chip {
   color: #1d8fe8;
-  font-size: var(--fs-base);
+  font-size: var(--fs-md);
   font-weight: 500;
   letter-spacing: 0;
 }
@@ -213,12 +214,12 @@ button {
 .affiliation-item {
   margin: 0;
   color: #64748b;
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
   line-height: 1.55;
 }
 
 .affiliation-note {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-base);
 }
 
 .affiliation-marker {
@@ -808,6 +809,14 @@ button {
 
 .method-step p {
   margin: 10px 0 0;
+  max-width: 86ch;
+  font-size: var(--fs-base);
+  line-height: 1.72;
+}
+
+.method-step h3 {
+  font-size: var(--fs-lg);
+  line-height: 1.18;
 }
 
 .results-panel {

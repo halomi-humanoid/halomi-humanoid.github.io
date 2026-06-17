@@ -38,7 +38,7 @@ const siteData = {
     posterText: ""
   },
   abstract:
-    "Human demonstrations, which can be collected at scale and naturally capture active hand-eye coordination, are a promising data source for learning humanoid loco-manipulation. However, directly transferring human demonstrations to humanoids requires a <strong class=\"text-strong\">precise world-frame tracking controller</strong class>, which is often <strong class=\"text-strong\">brittle under out-of-distribution (OOD) targets</strong class>, while <strong class=\"text-strong\">human-to-humanoid gaps</strong class> persist in both egocentric observation and action execution. To address these challenges, we present <strong class=\"text-strong\">HALOMI</strong class>, a scalable framework that effectively learns <strong class=\"text-strong\">humanoid loco-manipulation with active perception from human demonstrations</strong class>. HALOMI extends Universal Manipulation Interface (UMI) with egocentric sensing to collect ego-view observations and head-hand trajectories at scale. We further propose a <strong class=\"text-strong\">manifold-constrained controller</strong class> that plans in a learned latent behavior manifold to enable precise and robust head-hand tracking in the world frame. To bridge the human–to-humanoid gap, we perform <strong class=\"text-strong\">ego-view alignment</strong class> and introduce a <strong class=\"text-strong\">controller-aware reference trajectory adaptation</strong class> to reduce mismatch in both observation and action execution. We validate HALOMI on a Unitree G1 humanoid robot with an actuated neck across five real-world tasks involving <strong class=\"text-strong\">navigation, grasping, bimanual manipulation, whole-body coordination, and dynamic behaviors</strong class>. Across the three quantitatively evaluated tasks, HALOMI achieves an <strong class=\"text-strong\">average success rate of 85\%</strong class>, while additional qualitative demonstrations show its ability to support dynamic tossing and deep-squat grasping.",
+    "Human demonstrations, which can be collected at scale and naturally capture active hand-eye coordination, are a promising data source for learning humanoid loco-manipulation. However, directly transferring human demonstrations to humanoids is challenging because it requires robust world-frame head-hand tracking while addressing observation and embodiment gaps. We present HALOMI, a scalable framework for learning humanoid loco-manipulation with active perception from human demonstrations. HALOMI extends Universal Manipulation Interface (UMI) with egocentric sensing to collect ego-view observations and head-hand trajectories at scale. We further propose a manifold-constrained controller that plans in a learned latent behavior manifold to enable precise and robust tracking in the world frame. To bridge the human-to-humanoid gap, we perform ego-view alignment and introduce controller-aware reference trajectory adaptation to reduce mismatch in both observation and action execution. We validate HALOMI on a Unitree G1 humanoid robot with an actuated neck across five real-world task families including navigation, grasping, bimanual manipulation, whole-body coordination, and dynamic behaviors. Across the three quantitatively evaluated tasks, HALOMI achieves an average success rate of 85%, while additional qualitative demonstrations show its ability to support dynamic tossing and deep-squat grasping.",
   trackingVideos: [
     {
       title: "Natural Walking",
@@ -263,6 +263,28 @@ const siteData = {
           summary:
             "Walk towards the location of the cabinet and place the backpack on the top of the cabinet.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
+          posterTitle: "Bag Trial 1",
+          posterText: "Bag transfer rollout with active perception",
+          tags: ["Navigation", "Walking", "Searching", "Placing"],
+          embedUrl: "",
+          videoUrl: "assets/videos/bag/bag1.mp4"
+        },
+        {
+          title: "Bag Transfer",
+          summary:
+            "Walk towards the location of the cabinet and place the backpack on the top of the cabinet.",
+          accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
+          posterTitle: "Bag Trial 2",
+          posterText: "Bag transfer rollout with active perception",
+          tags: ["Navigation", "Walking", "Searching", "Placing"],
+          embedUrl: "",
+          videoUrl: "assets/videos/bag/bag2.mp4"
+        },
+        {
+          title: "Bag Transfer",
+          summary:
+            "Walk towards the location of the cabinet and place the backpack on the top of the cabinet.",
+          accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Successful trial: OOD",
           posterText: "Successful demo which the cabinet location is not inside the dataset",
           tags: ["Navigation", "Walking", "Searching", "Placing"],
@@ -353,7 +375,7 @@ const siteData = {
       mediaAlt: "Whole-body latent-manifold controller visualization"
     },
     {
-      title: "Human-to-Humanoid Alignment for Data Post-Processing",
+      title: "Human Data Processing to Bridge the Embodiment Gap",
       description:
         "We introduce an automated offline data processing pipeline to reduce the human-to-humanoid embodiment gap in both observation and action spaces. View alignment mitigates visual discrepancies caused by viewpoint mismatch, while controller-aware reference trajectory adaptation reduces execution errors of human head-hand trajectories, mitigating error accumulation during closed-loop rollouts."
     },
