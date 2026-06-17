@@ -103,7 +103,7 @@ const siteData = {
       label: "Whole-body Loco-Manipulation",
       setups: [
         {
-          title: "Bread Pick & Place",
+          title: "Pick Bread and Place",
           summary:
             "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
           accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
@@ -125,7 +125,7 @@ const siteData = {
         //   videoUrl: "assets/videos/bread/bread_robot_ood_state.mp4"
         // },
         {
-          title: "Bread Pick & Place",
+          title: "Pick Bread and Place",
           summary:
             "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
           accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
@@ -175,7 +175,7 @@ const siteData = {
       label: "Hand-Eye Coordination & Active Perception",
       setups: [
         {
-          title: "Towel Transfer to Basket",
+          title: "Transfer Towel to Basket",
           summary:
             "Find and grasp the towel, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
@@ -186,7 +186,7 @@ const siteData = {
           videoUrl: "assets/videos/towel/towel2.mp4"
         },
         {
-          title: "Towel Transfer to Basket",
+          title: "Transfer Towel to Basket",
           summary:
             "Find and grasp the towel, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
@@ -197,7 +197,7 @@ const siteData = {
           videoUrl: "assets/videos/towel/towel3.mp4"
         },
         {
-          title: "Towel Transfer to Basket",
+          title: "Transfer Towel to Basket",
           summary:
             "Find and grasp the towel, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
@@ -208,7 +208,7 @@ const siteData = {
           videoUrl: "assets/videos/towel/towel4.mp4"
         },
         {
-          title: "Towel Transfer to Basket",
+          title: "Transfer Towel to Basket",
           summary:
             "Find and grasp the towel, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
@@ -219,7 +219,7 @@ const siteData = {
           videoUrl: "assets/videos/towel/towel5.mp4"
         },
         {
-          title: "Towel Transfer to Basket",
+          title: "Transfer Towel to Basket",
           summary:
             "Find and grasp the towel, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
@@ -230,7 +230,7 @@ const siteData = {
           videoUrl: "assets/videos/towel/towel6.mp4"
         },
         {
-          title: "Towel Transfer to Basket",
+          title: "Transfer Towel to Basket",
           summary:
             "Find and grasp the towel, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
@@ -372,20 +372,16 @@ const siteData = {
   },
   failureCases: [
     {
-      title: "Without View Alignment",
-      videoUrl: "assets/videos/bag/bag_failure_view_align.mp4"
+      title: "Bag Transfer",
+      videoUrl: "assets/videos/overheat/bagoverheat.mp4"
     },
     {
-      title: "Human Disturbance",
-      videoUrl: "assets/videos/loco/human_disturbance.mp4"
+      title: "Pick Bread and Place",
+      videoUrl: "assets/videos/overheat/breadoverheat.mp4"
     },
     {
-      title: "Infeasible Motion",
-      videoUrl: "assets/videos/loco/infeasible_motion.mp4"
-    },
-    {
-      title: "Without Active View",
-      videoUrl: "assets/videos/towel/active_neck_comparison.mp4"
+      title: "Towel Transfer",
+      videoUrl: "assets/videos/overheat/toweloverheat.mp4"
     }
   ],
   // contact: {
@@ -701,7 +697,6 @@ function renderDemoStage() {
   root.innerHTML = `
     <article class="demo-browser-card">
       <div class="demo-browser-heading">
-        <p class="mono-label">Selected Task</p>
         <h3 class="demo-browser-title"></h3>
         <p class="demo-browser-summary"></p>
       </div>
