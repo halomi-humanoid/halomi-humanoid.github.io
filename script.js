@@ -317,7 +317,7 @@ const siteData = {
       description:
         "We develop a robot-free egocentric data collection system that combines bimanual UMI-style handheld grippers with a wearable head-mounted egocentric sensing, enabling synchronized collection of multi-view visual observations and corresponding hand-eye motion trajectories.",
       imageUrl: "",
-      videoUrl: "assets/videos/data_collect.mp4",
+      videoUrl: "assets/videos/data_collection.mp4",
       embedUrl: "",
       mediaAlt: "Human data collection visualization"
     },
