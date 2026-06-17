@@ -20,7 +20,7 @@ const siteData = {
       { id: "†", label: "Corresponding Author", type: "note" }
     ],
     links: [
-      { label: "Paper", note: "", icon: "./assets/icons/pdf.png", url: "#" },
+      { label: "Paper", note: "", icon: "./assets/icons/pdf.png", url: "https://drive.google.com/file/d/11g2bfFGiOuT4ywBYOLERDCkxVWztU4S_/view?usp=drive_link" },
       { label: "arXiv", note: "", icon: "./assets/icons/arxiv.png", url: "#" },
       // { label: "Video", note: "", icon: "./assets/icons/youtube.svg", url: "#" },
       { label: "Code (Coming Soon)", note: "", icon: "./assets/icons/github.png", disabled: true },
@@ -41,7 +41,7 @@ const siteData = {
       "You can point this area to a YouTube embed, a Bilibili embed, or a local MP4 in assets/videos/."
   },
   abstract:
-    "Human demonstrations, which can be collected at scale and naturally capture active hand-eye coordination, are a promising data source for learning humanoid loco-manipulation. However, directly transferring human demonstrations to humanoids requires a <strong class=\"text-strong\">precise world-frame tracking controller</strong class>, which is often <strong class=\"text-strong\">brittle under out-of-distribution targets and localization noises</strong class>, while <strong class=\"text-strong\">human-to-humanoid gaps</strong class> persist in both egocentric observation and action execution. To address these challenges, we present <strong class=\"text-strong\">HALOMI</strong class>, a scalable framework that effectively learns <strong class=\"text-strong\">humanoid loco-manipulation with active perception from human demonstrations</strong class>. HALOMI extends Universal Manipulation Interface (UMI) with egocentric sensing to collect ego-view observations and head-hand trajectories at scale. We further propose a <strong class=\"text-strong\">manifold-constrained controller</strong class> that plans in a learned latent behavior manifold to enable precise and robust head-hand tracking in the world frame. To bridge the human–to-humanoid gap, we perform <strong class=\"text-strong\">ego-view alignment</strong class> and introduce a <strong class=\"text-strong\">controller-aware reference trajectory adaptation</strong class> to reduce mismatch in both observation and action execution. We validate HALOMI on a Unitree G1 humanoid robot with an actuated neck across five real-world tasks involving <strong class=\"text-strong\">navigation, grasping, bimanual manipulation, whole-body coordination, and dynamic behaviors</strong class>. Across the three quantitatively evaluated tasks, HALOMI achieves an <strong class=\"text-strong\">average success rate of 85\%</strong class>, while additional qualitative demonstrations show its ability to support dynamic tossing and deep-squat grasping.",
+    "Human demonstrations, which can be collected at scale and naturally capture active hand-eye coordination, are a promising data source for learning humanoid loco-manipulation. However, directly transferring human demonstrations to humanoids requires a <strong class=\"text-strong\">precise world-frame tracking controller</strong class>, which is often <strong class=\"text-strong\">brittle under out-of-distribution (OOD) targets</strong class>, while <strong class=\"text-strong\">human-to-humanoid gaps</strong class> persist in both egocentric observation and action execution. To address these challenges, we present <strong class=\"text-strong\">HALOMI</strong class>, a scalable framework that effectively learns <strong class=\"text-strong\">humanoid loco-manipulation with active perception from human demonstrations</strong class>. HALOMI extends Universal Manipulation Interface (UMI) with egocentric sensing to collect ego-view observations and head-hand trajectories at scale. We further propose a <strong class=\"text-strong\">manifold-constrained controller</strong class> that plans in a learned latent behavior manifold to enable precise and robust head-hand tracking in the world frame. To bridge the human–to-humanoid gap, we perform <strong class=\"text-strong\">ego-view alignment</strong class> and introduce a <strong class=\"text-strong\">controller-aware reference trajectory adaptation</strong class> to reduce mismatch in both observation and action execution. We validate HALOMI on a Unitree G1 humanoid robot with an actuated neck across five real-world tasks involving <strong class=\"text-strong\">navigation, grasping, bimanual manipulation, whole-body coordination, and dynamic behaviors</strong class>. Across the three quantitatively evaluated tasks, HALOMI achieves an <strong class=\"text-strong\">average success rate of 85\%</strong class>, while additional qualitative demonstrations show its ability to support dynamic tossing and deep-squat grasping.",
   trackingVideos: [
     {
       title: "Natural Walking",
@@ -58,6 +58,34 @@ const siteData = {
       videoUrl: "assets/videos/loco/stand_arm_moving.mp4"
     },
     {
+      title: "Robustness",
+      summary: "The robot resists the sudden force exerted by human and recover to the original world frame targets.",
+      accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
+      embedUrl: "",
+      videoUrl: "assets/videos/loco/robustness_mosaic.mp4"
+    },
+    {
+      title: "Recovery",
+      summary: "The robot could recover from fall down to the target poses",
+      accent: "linear-gradient(140deg, rgba(5, 150, 105, 0.94), rgba(17, 24, 39, 0.88))",
+      embedUrl: "",
+      videoUrl: "assets/videos/loco/recovery.mp4"
+    },
+    {
+      title: "Recovery",
+      summary: "The robot could recover from fall down to the target poses",
+      accent: "linear-gradient(140deg, rgba(5, 150, 105, 0.94), rgba(17, 24, 39, 0.88))",
+      embedUrl: "",
+      videoUrl: "assets/videos/loco/recovery2.mp4"
+    },
+    {
+      title: "Infeasible Motion",
+      summary: "The infeasible motion commands will be rejected to be tracking while keeping the most closet posture.",
+      accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
+      embedUrl: "",
+      videoUrl: "assets/videos/loco/infeasible_motion.mp4"
+    },
+    {
       title: "Squat",
       summary: "Whole-body motion with squating and hand motion without fall-off.",
       accent: "linear-gradient(140deg, rgba(37, 99, 235, 0.94), rgba(30, 64, 175, 0.88))",
@@ -71,29 +99,6 @@ const siteData = {
       embedUrl: "",
       videoUrl: "assets/videos/loco/human_disturbance_mosaic.mp4"
     },
-    {
-      title: "Infeasible Motion",
-      summary: "The infeasible motion commands will be rejected to be tracking while keeping the most closet posture.",
-      accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
-      embedUrl: "",
-      videoUrl: "assets/videos/loco/infeasible_motion.mp4"
-    },
-    
-    {
-      title: "Robustness",
-      summary: "The robot resists the sudden force exerted by human and recover to the original world frame targets.",
-      accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
-      embedUrl: "",
-      videoUrl: "assets/videos/loco/robustness_mosaic.mp4"
-    },
-    
-    {
-      title: "Recovery",
-      summary: "The robot could recover from fall down to the target poses",
-      accent: "linear-gradient(140deg, rgba(5, 150, 105, 0.94), rgba(17, 24, 39, 0.88))",
-      embedUrl: "",
-      videoUrl: "assets/videos/loco/recovery.mp4"
-    }
   ],
   demoTasks: [
     {
@@ -111,17 +116,17 @@ const siteData = {
           embedUrl: "",
           videoUrl: "assets/videos/bread/bread_rollout.mp4"
         },
-        {
-          title: "Bread Pick & Place",
-          summary:
-            "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
-          accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
-          posterTitle: "Successful trial: OOD",
-          posterText: "Successful demo which the robot is started in a ood location",
-          tags: ["Grasping", "Searching", "Placing"],
-          embedUrl: "",
-          videoUrl: "assets/videos/bread/bread_robot_ood_state.mp4"
-        },
+        // {
+        //   title: "Bread Pick & Place",
+        //   summary:
+        //     "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
+        //   accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
+        //   posterTitle: "Successful trial: OOD",
+        //   posterText: "Successful demo which the robot is started in a ood location",
+        //   tags: ["Grasping", "Searching", "Placing"],
+        //   embedUrl: "",
+        //   videoUrl: "assets/videos/bread/bread_robot_ood_state.mp4"
+        // },
         {
           title: "Bread Pick & Place",
           summary:
@@ -133,28 +138,28 @@ const siteData = {
           embedUrl: "",
           videoUrl: "assets/videos/bread/bread_ood.mp4"
         },
-        {
-          title: "Bread Pick & Place",
-          summary:
-            "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
-          accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
-          posterTitle: "Successful trial",
-          posterText: "Successful demo which the bread and disk are located in a ood location with human disturbance",
-          tags: ["Grasping", "Searching", "Placing"],
-          embedUrl: "",
-          videoUrl: "assets/videos/bread/bread_disturbance.mp4"
-        },
-        {
-          title: "Bottle Transfer",
-          summary:
-            "Find the bottle and suqat to grasp the bottle. Then place the bottle inside the backpack located on the top of left cabinet",
-          accent: "linear-gradient(140deg, rgba(8, 145, 178, 0.94), rgba(30, 41, 59, 0.88))",
-          posterTitle: "Successful trial",
-          posterText: "Successful demo 1 for bottle transfer",
-          tags: ["Squat", "Grasping", "Turning", "Placing"],
-          embedUrl: "",
-          videoUrl: "assets/videos/other_tasks/squat1.mp4"
-        },
+        // {
+        //   title: "Bread Pick & Place",
+        //   summary:
+        //     "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
+        //   accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
+        //   posterTitle: "Successful trial",
+        //   posterText: "Successful demo which the bread and disk are located in a ood location with human disturbance",
+        //   tags: ["Grasping", "Searching", "Placing"],
+        //   embedUrl: "",
+        //   videoUrl: "assets/videos/bread/bread_disturbance.mp4"
+        // },
+        // {
+        //   title: "Bottle Transfer",
+        //   summary:
+        //     "Find the bottle and suqat to grasp the bottle. Then place the bottle inside the backpack located on the top of left cabinet",
+        //   accent: "linear-gradient(140deg, rgba(8, 145, 178, 0.94), rgba(30, 41, 59, 0.88))",
+        //   posterTitle: "Successful trial",
+        //   posterText: "Successful demo 1 for bottle transfer",
+        //   tags: ["Squat", "Grasping", "Turning", "Placing"],
+        //   embedUrl: "",
+        //   videoUrl: "assets/videos/other_tasks/squat1.mp4"
+        // },
         {
           title: "Bottle Transfer",
           summary:
@@ -205,17 +210,17 @@ const siteData = {
           embedUrl: "",
           videoUrl: "assets/videos/towel/towel1_left.mp4"
         },
-        {
-          title: "Towel Transfer to Cabinet",
-          summary:
-            "Find and grasp towel and transfer to the top of right cabinet",
-          accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
-          posterTitle: "Successful Trial",
-          posterText: "Transfer the white/grey towel to the top surface of cabinet on the right",
-          tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
-          embedUrl: "",
-          videoUrl: "assets/videos/towel/tower1_right.mp4"
-        },
+        // {
+        //   title: "Towel Transfer to Cabinet",
+        //   summary:
+        //     "Find and grasp towel and transfer to the top of right cabinet",
+        //   accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
+        //   posterTitle: "Successful Trial",
+        //   posterText: "Transfer the white/grey towel to the top surface of cabinet on the right",
+        //   tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
+        //   embedUrl: "",
+        //   videoUrl: "assets/videos/towel/tower1_right.mp4"
+        // },
         
       ]
     },
@@ -223,17 +228,17 @@ const siteData = {
       id: "task-01",
       label: "Long-range Navigation",
       setups: [
-        {
-          title: "Bag Transfer",
-          summary:
-            "Walk towards the location of the cabinet and place the backpack on the top of the cabinet.",
-          accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
-          posterTitle: "Real world rollouts",
-          posterText: "20 times real world rollouts with varied location of cabinet",
-          tags: ["Navigation", "Walking", "Searching", "Placing"],
-          embedUrl: "",
-          videoUrl: "assets/videos/bag/bag_rollout.mp4"
-        },
+        // {
+        //   title: "Bag Transfer",
+        //   summary:
+        //     "Walk towards the location of the cabinet and place the backpack on the top of the cabinet.",
+        //   accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
+        //   posterTitle: "Real world rollouts",
+        //   posterText: "20 times real world rollouts with varied location of cabinet",
+        //   tags: ["Navigation", "Walking", "Searching", "Placing"],
+        //   embedUrl: "",
+        //   videoUrl: "assets/videos/bag/bag_rollout.mp4"
+        // },
         {
           title: "Bag Transfer",
           summary:
@@ -291,7 +296,7 @@ const siteData = {
     {
       title: "Human Data Collection",
       description:
-        "We aggregate the bimaual UMI-like handheld gripper from Agilex Robotics Pika Sense with a wearable helmet which integrates the Intel RealSense D435i and HTC VIVE Tracker 3.0. This system enables robot-free demonstration collection with synchronized multi-view camera streams and corresponding hand-eye motion trajectories.",
+        "We develop a robot-free egocentric data collection system that combines bimanual UMI-style handheld grippers with a wearable head-mounted egocentric sensing, enabling synchronized collection of multi-view visual observations and corresponding hand-eye motion trajectories.",
       imageUrl: "",
       videoUrl: "assets/videos/data_collect.mp4",
       embedUrl: "",
@@ -300,7 +305,7 @@ const siteData = {
     {
       title: "Manifold-Constrained Whole-Body Controller",
       description:
-        "We develop a manifold-constrained low-level reinforcement learning (RL) controller that tracks a unified set of hand-eye world-frame targets to bridge the high-level VLA action interface and humanoid whole-body execution. Instead of tracking in the joint action space, the controller plans over a learned latent behavior manifold, enabling precise and robust world-frame tracking.",
+        "We develop a manifold-constrained reinforcement learning (RL) controller that tracks a unified set of head-hand world-frame targets to bridge the high-level VLA action interface and humanoid whole-body execution. Instead of tracking in the joint action space, the controller plans over a learned latent behavior manifold, enabling precise and robust world-frame tracking.",
       imageUrl: "assets/figures/loco_compressed.png",
       videoUrl: "",
       embedUrl: "",
@@ -309,7 +314,7 @@ const siteData = {
     {
       title: "Human-to-Humanoid Alignment for Data Post-Processing",
       description:
-        "We introduce an automated offline data processing pipeline to reduce the human-to-humanoid embodiment gap in both observation and action spaces. View alignment mitigates visual discrepancies caused by viewpoint mismatch, while controller-aware reference trajectory adaptation reduces execution errors of human head-and-hand trajectories, mitigating error accumulation during closed-loop rollouts."
+        "We introduce an automated offline data processing pipeline to reduce the human-to-humanoid embodiment gap in both observation and action spaces. View alignment mitigates visual discrepancies caused by viewpoint mismatch, while controller-aware reference trajectory adaptation reduces execution errors of human head-hand trajectories, mitigating error accumulation during closed-loop rollouts."
     },
   ],
   results: {
