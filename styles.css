@@ -729,7 +729,7 @@ button {
   max-width: 980px;
   margin: 0 auto;
   display: grid;
-  justify-items: center;
+  justify-items: stretch;
 }
 
 .method-step {
@@ -739,14 +739,14 @@ button {
   gap: 16px;
   padding: 20px 0;
   border-top: 1px solid var(--line);
-  text-align: center;
+  text-align: left;
 }
 
 .method-step.has-media {
   grid-template-columns: 1fr;
-  justify-items: center;
+  justify-items: stretch;
   gap: 18px;
-  text-align: center;
+  text-align: left;
 }
 
 .method-step.has-media .step-number {
@@ -755,6 +755,7 @@ button {
 
 .method-step-media {
   width: min(860px, 100%);
+  margin: 0 auto;
   overflow: hidden;
   aspect-ratio: 16 / 9;
   border-radius: 8px;
@@ -789,7 +790,7 @@ button {
   height: 62px;
   display: grid;
   place-items: center;
-  margin: 0 auto;
+  margin: 0;
   border-radius: 18px;
   background: var(--accent-soft);
   font-family: "IBM Plex Mono", monospace;

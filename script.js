@@ -291,22 +291,44 @@ const siteData = {
           summary:
             "Toss the ball into the bin.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
-          posterTitle: "Successful Trial",
+          posterTitle: "Tossing Trial 1",
           posterText: "Toss the ball into the orange bin",
           tags: ["Dynamic", "Waliking", "Tossing"],
           embedUrl: "",
-          videoUrl: "assets/videos/other_tasks/tossing.mp4"
+          videoUrl: "assets/videos/tossing/tossing1.mp4"
         },
         {
-          title: "Continous tossing",
+          title: "Tossing",
           summary:
             "Toss the ball into the bin.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
-          posterTitle: "Successful Trial",
-          posterText: "a continuous ball-throwing test where the robot throws a ball into a bucket, and a human retrieves the ball and hands it back for the next throw",
+          posterTitle: "Tossing Trial 2",
+          posterText: "Toss the ball into the orange bin",
           tags: ["Dynamic", "Waliking", "Tossing"],
           embedUrl: "",
-          videoUrl: "assets/videos/other_tasks/continous_tossing.mp4"
+          videoUrl: "assets/videos/tossing/tossing2.mp4"
+        },
+        {
+          title: "Tossing",
+          summary:
+            "Toss the ball into the bin.",
+          accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
+          posterTitle: "Tossing Trial 3",
+          posterText: "Toss the ball into the orange bin",
+          tags: ["Dynamic", "Waliking", "Tossing"],
+          embedUrl: "",
+          videoUrl: "assets/videos/tossing/tossing3.mp4"
+        },
+        {
+          title: "Tossing",
+          summary:
+            "Toss the ball into the bin.",
+          accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
+          posterTitle: "Tossing Trial 4",
+          posterText: "Toss the ball into the orange bin",
+          tags: ["Dynamic", "Waliking", "Tossing"],
+          embedUrl: "",
+          videoUrl: "assets/videos/tossing/tossing4.mp4"
         },
       ]
     }
