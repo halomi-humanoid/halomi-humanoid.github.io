@@ -745,7 +745,7 @@ button {
 .method-step.has-media {
   grid-template-columns: 1fr;
   justify-items: stretch;
-  gap: 18px;
+  gap: 10px;
   text-align: left;
 }
 
@@ -783,6 +783,13 @@ button {
 .method-step-media img,
 .method-step-media video {
   object-fit: contain;
+}
+
+.method-step-media.has-video video {
+  object-fit: cover;
+  object-position: center top;
+  transform: translateY(-14%) scale(1.08);
+  transform-origin: top center;
 }
 
 .step-number {
