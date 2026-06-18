@@ -256,7 +256,7 @@ const siteData = {
           posterText: "Bag transfer rollout with active perception",
           tags: ["Navigation", "Walking", "Searching", "Placing"],
           embedUrl: "",
-          videoUrl: "assets/videos/bag/bag1.mp4"
+          videoUrl: "assets/videos/bag/bag_ood_clipped.mp4"
         },
         {
           title: "Bag Transfer",
@@ -267,7 +267,7 @@ const siteData = {
           posterText: "Bag transfer rollout with active perception",
           tags: ["Navigation", "Walking", "Searching", "Placing"],
           embedUrl: "",
-          videoUrl: "assets/videos/bag/bag2.mp4"
+          videoUrl: "assets/videos/bag/bag_ood_clipped.mp4"
         },
         {
           title: "Bag Transfer",
