@@ -20,7 +20,7 @@ const siteData = {
       { id: "†", label: "Corresponding Author", type: "note" }
     ],
     links: [
-      { label: "Paper", note: "", icon: "./assets/icons/pdf.png", url: "https://drive.google.com/file/d/11g2bfFGiOuT4ywBYOLERDCkxVWztU4S_/view?usp=drive_link" },
+      { label: "Paper", note: "", icon: "./assets/icons/pdf.png", url: "./assets/halomi.pdf" },
       { label: "arXiv", note: "", icon: "./assets/icons/arxiv.png", url: "#" },
       // { label: "Video", note: "", icon: "./assets/icons/youtube.svg", url: "#" },
       { label: "Code (Coming Soon)", note: "", icon: "./assets/icons/github.png", disabled: true },
