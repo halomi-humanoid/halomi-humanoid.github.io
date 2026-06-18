@@ -728,7 +728,7 @@ button {
 }
 
 .method-steps {
-  max-width: 980px;
+  max-width: 1280px;
   margin: 0 auto;
   display: grid;
   justify-items: stretch;
@@ -756,7 +756,7 @@ button {
 }
 
 .method-step-media {
-  width: min(860px, 100%);
+  width: min(1180px, 100%);
   margin: 0 auto;
   overflow: hidden;
   aspect-ratio: 16 / 9;
