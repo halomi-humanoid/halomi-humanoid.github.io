@@ -31,7 +31,7 @@ const siteData = {
     title: "Technical Summary Video",
 
     embedUrl: "",
-    videoUrl: "assets/videos/summary_web.mp4",
+    videoUrl: "assets/videos/summary_web.mp4?v=20260618-0631",
     imageUrl: "",
     imageAlt: "Technical summary video",
     posterTitle: "Technical Summary Video",
@@ -234,7 +234,7 @@ const siteData = {
     },
     {
       id: "task-01",
-      label: "Long-range Navigation",
+      label: "Navigation",
       setups: [
         // {
         //   title: "Bag Transfer",
