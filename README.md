@@ -1,6 +1,8 @@
-# Academic Project Page Template
+# HALOMI: Humanoid Loco-Manipulation with Active Perception
 
-这是一个可直接部署到 GitHub Pages 的学术项目网页模板，适合放：
+This repository hosts the project page for HALOMI, a framework for learning humanoid loco-manipulation with active perception from purely human data, without real robot teleoperation data.
+
+The page includes:
 
 - 论文主页
 - Demo 视频
