@@ -630,6 +630,7 @@ function createTrackingCard(entry) {
     const video = document.createElement("video");
     video.src = entry.videoUrl;
     video.controls = true;
+    video.muted = true;
     media.appendChild(video);
   } else {
     media.appendChild(createPoster(entry));
@@ -792,6 +793,7 @@ function renderDemoStage() {
     const video = document.createElement("video");
     video.src = setup.videoUrl;
     video.controls = true;
+    video.muted = true;
     frameMedia.appendChild(video);
   } else {
     const placeholder = document.createElement("div");
@@ -944,6 +946,7 @@ function renderResults() {
         video.src = finding.videoUrl;
         video.controls = true;
         video.preload = "metadata";
+        video.muted = true;
         video.playsInline = true;
         if (finding.videoPoster) {
           video.poster = finding.videoPoster;
@@ -975,6 +978,7 @@ function renderFailureCases() {
     video.src = entry.videoUrl;
     video.controls = true;
     video.preload = "metadata";
+    video.muted = true;
     video.playsInline = true;
     media.appendChild(video);
 
