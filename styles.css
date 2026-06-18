@@ -538,7 +538,7 @@ button {
 
 .demo-browser {
   max-width: 1080px;
-  margin: 0 auto;
+  margin: 46px auto 0;
 }
 
 .demo-task-tabs {
@@ -566,6 +566,7 @@ button {
   font-weight: 500;
   line-height: 1.25;
   text-align: center;
+  white-space: pre-line;
   transition: border-color 180ms ease, background 180ms ease, color 180ms ease;
 }
 
@@ -875,7 +876,7 @@ button {
 
 .results-findings {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 52px auto 0;
   text-align: center;
 }
 
@@ -904,6 +905,10 @@ button {
   display: grid;
   align-content: center;
   text-align: center;
+}
+
+.results-summary:empty {
+  display: none;
 }
 
 .results-findings h3 {

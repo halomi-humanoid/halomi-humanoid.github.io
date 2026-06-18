@@ -38,17 +38,17 @@ const siteData = {
     posterText: ""
   },
   abstract:
-    "Human demonstrations, which can be collected at scale and naturally capture active hand-eye coordination, are a promising data source for learning humanoid loco-manipulation. However, directly transferring human demonstrations to humanoids is challenging because it requires robust world-frame head-hand tracking while addressing observation and embodiment gaps. We present HALOMI, a scalable framework for learning humanoid loco-manipulation with active perception from human demonstrations. HALOMI extends Universal Manipulation Interface (UMI) with egocentric sensing to collect ego-view observations and head-hand trajectories at scale. We further propose a manifold-constrained controller that plans in a learned latent behavior manifold to enable precise and robust tracking in the world frame. To bridge the human-to-humanoid gap, we perform ego-view alignment and introduce controller-aware reference trajectory adaptation to reduce mismatch in both observation and action execution. We validate HALOMI on a Unitree G1 humanoid robot with an actuated neck across five real-world task families including navigation, grasping, bimanual manipulation, whole-body coordination, and dynamic behaviors. Across the three quantitatively evaluated tasks, HALOMI achieves an average success rate of 85%, while additional qualitative demonstrations show its ability to support dynamic tossing and deep-squat grasping.",
+    "Human demonstrations, which can be collected at scale and naturally capture active hand-eye coordination, are a promising data source for learning humanoid loco-manipulation. However, directly transferring human demonstrations to humanoids requires a precise world-frame tracking controller, which is often brittle under Out-of-Distribution (OOD) targets, while human-to-humanoid gaps persist in both egocentric observation and action execution. To address these challenges, we present HALOMI, a scalable framework for learning humanoid loco-manipulation with active perception from human demonstrations. HALOMI extends Universal Manipulation Interface (UMI) with egocentric sensing to collect ego-view and wrist-view observations along with head-hand trajectories at scale. We further propose a manifold-constrained controller that plans in a learned latent behavior manifold to enable precise and robust head-hand tracking in the world frame. To bridge the human-to-humanoid gap, we perform ego-view alignment and introduce a controller-aware reference trajectory adaptation to reduce mismatch in both observation and action execution. We validate HALOMI on a Unitree G1 humanoid robot with an actuated neck across five real-world tasks involving navigation, grasping, bimanual manipulation, whole-body coordination, and dynamic behaviors. Across the three quantitatively evaluated tasks, HALOMI achieves an average success rate of 85%, while additional qualitative demonstrations show its ability to support dynamic tossing and deep-squat grasping.",
   trackingVideos: [
     {
-      title: "Natural Walking",
+      title: "Walking",
       summary: "The consistent translation command for all upper body goals stimulates the human-like natural walking by the RL controller.",
       accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
       embedUrl: "",
       videoUrl: "assets/videos/loco/walk.mp4"
     },
     {
-      title: "Standing with hand motion",
+      title: "In-Place Hand Motion Tracking",
       summary: "Tracking the upper hands motion while maintaing standing balance.",
       accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
       embedUrl: "",
@@ -62,21 +62,21 @@ const siteData = {
       videoUrl: "assets/videos/loco/robustness_mosaic.mp4"
     },
     {
-      title: "Recovery",
+      title: "Ground-to-Stand",
       summary: "The robot could recover from fall down to the target poses",
       accent: "linear-gradient(140deg, rgba(5, 150, 105, 0.94), rgba(17, 24, 39, 0.88))",
       embedUrl: "",
       videoUrl: "assets/videos/loco/recovery.mp4"
     },
     {
-      title: "Recovery",
+      title: "Ground-to-Stand",
       summary: "The robot could recover from fall down to the target poses",
       accent: "linear-gradient(140deg, rgba(5, 150, 105, 0.94), rgba(17, 24, 39, 0.88))",
       embedUrl: "",
       videoUrl: "assets/videos/loco/recovery2.mp4"
     },
     {
-      title: "Infeasible Motion",
+      title: "Infeasible Target",
       summary: "The infeasible motion commands will be rejected to be tracking while keeping the most closet posture.",
       accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
       embedUrl: "",
@@ -100,7 +100,7 @@ const siteData = {
   demoTasks: [
     {
       id: "task-01",
-      label: "Whole-body Loco-Manipulation",
+      label: "Tabletop Manipulation",
       setups: [
         {
           title: "Pick Bread and Place",
@@ -157,22 +157,11 @@ const siteData = {
         //   embedUrl: "",
         //   videoUrl: "assets/videos/other_tasks/squat1.mp4"
         // },
-        {
-          title: "Bottle Transfer",
-          summary:
-            "Find the bottle and suqat to grasp the bottle. Then place the bottle inside the backpack located on the top of left cabinet",
-          accent: "linear-gradient(140deg, rgba(8, 145, 178, 0.94), rgba(30, 41, 59, 0.88))",
-          posterTitle: "Successful trial bumping to the cabinet",
-          posterText: "Successful demo 2 for bottle transfer",
-          tags: ["Squat", "Grasping", "Turning", "Placing"],
-          embedUrl: "",
-          videoUrl: "assets/videos/other_tasks/squat2.mp4"
-        }
       ]
     },
     {
       id: "task-02",
-      label: "Hand-Eye Coordination & Active Perception",
+      label: "Hand-Eye Coordination\n& Active Perception",
       setups: [
         {
           title: "Transfer Towel to Basket",
@@ -306,7 +295,7 @@ const siteData = {
     },
     {
       id: "task-04",
-      label: "Dynamic Capability",
+      label: "Dynamic Capability\n& Deep-Squat Grasp-Place",
       setups: [
         {
           title: "Tossing",
@@ -352,6 +341,17 @@ const siteData = {
           embedUrl: "",
           videoUrl: "assets/videos/tossing/tossing4.mp4"
         },
+        {
+          title: "Deep-Squat Grasp-Place",
+          summary:
+            "Squat to grasp the bottle, then place it inside the backpack on the cabinet.",
+          accent: "linear-gradient(140deg, rgba(8, 145, 178, 0.94), rgba(30, 41, 59, 0.88))",
+          posterTitle: "Bottle Transfer",
+          posterText: "Deep-squat grasp-place rollout",
+          tags: ["Squat", "Grasping", "Turning", "Placing"],
+          embedUrl: "",
+          videoUrl: "assets/videos/squat.mp4"
+        },
       ]
     }
   ],
@@ -368,7 +368,7 @@ const siteData = {
     {
       title: "Manifold-Constrained Whole-Body Controller",
       description:
-        "We develop a manifold-constrained reinforcement learning (RL) controller that tracks a unified set of head-hand world-frame targets to bridge the high-level VLA action interface and humanoid whole-body execution. Instead of tracking in the joint action space, the controller plans over a learned latent behavior manifold, enabling precise and robust world-frame tracking.",
+        "We develop a manifold-constrained whole-body controller that tracks a unified set of head-hand world-frame targets. Instead of tracking in the raw joint action space, the controller plans over a learned latent behavior manifold, enabling precise and robust world-frame tracking.",
       imageUrl: "assets/figures/loco_compressed.png",
       videoUrl: "",
       embedUrl: "",
@@ -401,11 +401,7 @@ const siteData = {
         caption: "Quantitative Ealuation on Transfer Towel to Basket"
       }
     ],
-    summary: [
-      "Best overall success across all three evaluated real-world tasks.",
-      "Active perception is essential for reliable transfer.",
-      "Generalizes to unseen setups and remains robust under perturbation."
-    ],
+    summary: [],
     findings: [
       {
         text: "",
