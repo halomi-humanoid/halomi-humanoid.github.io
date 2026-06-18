@@ -5,7 +5,7 @@ const siteData = {
       "Learning Humanoid Loco-Manipulation with Active Perception from Human Demonstrations",
     subtitle: "",
     authors: [
-      { name: "Zehui Zhao", url: "#", affiliations: [1], notes: ["*"] },
+      { name: "Zehui Zhao", url: "mailto:zzhfro@gmail.com", affiliations: [1], notes: ["*"] },
       { name: "Yuxuan Zhao", url: "#", affiliations: [1], notes: ["*"] },
       { name: "Gaojing Zhang", url: "#", affiliations: [1,2] },
       { name: "Chenxi Liu", url: "#", affiliations: [3] },
@@ -108,7 +108,7 @@ const siteData = {
             "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
           accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
           posterTitle: "Successful trial",
-          posterText: "20 times real world rollouts with varied location of bread and differet breads",
+          posterText: "20 times real world rollouts with varied location and breads",
           tags: ["Grasping", "Searching", "Placing"],
           embedUrl: "",
           videoUrl: "assets/videos/bread/bread_rollout.mp4"
@@ -523,8 +523,10 @@ function renderHero() {
 
     if (chip.tagName === "A") {
       chip.href = author.url;
-      chip.target = "_blank";
-      chip.rel = "noreferrer";
+      if (!author.url.startsWith("mailto:")) {
+        chip.target = "_blank";
+        chip.rel = "noreferrer";
+      }
     }
 
     authorList.appendChild(chip);
