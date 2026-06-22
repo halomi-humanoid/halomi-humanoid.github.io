@@ -130,7 +130,7 @@ const siteData = {
             "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
           accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
           posterTitle: "OOD Pick Bread and Place",
-          posterText: "Bread and disk are placed at unseen locations.",
+          posterText: "Bread and plate are placed at unseen locations.",
           tags: ["Grasping", "Placing"],
           embedUrl: "",
           videoUrl: "assets/videos/bread/bread_ood.mp4"
