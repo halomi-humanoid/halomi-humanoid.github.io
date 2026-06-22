@@ -77,7 +77,7 @@ const siteData = {
     },
     {
       title: "Infeasible Target",
-      summary: "The infeasible motion commands will be rejected to be tracking while keeping the most closet posture.",
+      summary: "The infeasible motion commands will be rejected to be tracking while keeping the closest feasible posture.",
       accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
       embedUrl: "",
       videoUrl: "assets/videos/loco/infeasible_motion.mp4"
@@ -91,7 +91,7 @@ const siteData = {
     },
     {
       title: "Human Disturbance",
-      summary: "Maintains tracking behavior for upper hands under external human disturbance for huamnoid body.",
+      summary: "Maintains tracking behavior for upper hands under external human disturbance for humanoid body.",
       accent: "linear-gradient(140deg, rgba(217, 119, 6, 0.95), rgba(127, 29, 29, 0.86))",
       embedUrl: "",
       videoUrl: "assets/videos/loco/human_disturbance_mosaic.mp4"
@@ -429,11 +429,11 @@ const siteData = {
   //   description:
   //     "Use this area for acknowledgements, funding sources, institutional support, collaborators, or open-source dependencies."
   // },
-  citation: {
+citation: {
     bibtex: `@article{zhao2026halomi,
-  title={Scalable Humanoid Loco-Manipulation from Human Demonstrations via Manifold-Constrained World-Frame Tracking},
+  title={HALOMI: Learning Humanoid Loco-Manipulation with Active Perception from Human Demonstrations},
   author={Zhao, Zehui and Zhao, Yuxuan and Zhang, Gaojing and Liu, Chenxi and Zheng, Maolin and Lian, Wenzhao},
-  journal={Preprint},
+  journal={arXiv preprint arXiv:2606.18772},
   year={2026}
 }`
   }
