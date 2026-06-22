@@ -250,7 +250,7 @@ const siteData = {
         {
           title: "Bag Transfer",
           summary:
-            "Walk towards the location of the cabinet and place the backpack on the top of the cabinet.",
+            "Navigate to the cabinet and place the backpack on top of it.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Bag Trial 1",
           posterText: "Bag transfer rollout with active perception",
@@ -261,7 +261,7 @@ const siteData = {
         {
           title: "Bag Transfer",
           summary:
-            "Walk towards the location of the cabinet and place the backpack on the top of the cabinet.",
+            "Navigate to the cabinet and place the backpack on top of it.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Bag Trial 2",
           posterText: "Bag transfer rollout with active perception",
@@ -272,7 +272,7 @@ const siteData = {
         {
           title: "Bag Transfer",
           summary:
-            "Walk towards the location of the cabinet and place the backpack on the top of the cabinet.",
+            "Navigate to the cabinet and place the backpack on top of it.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Successful trial: OOD",
           posterText: "The robot transfers the bag to a cabinet placed at a location unseen in the demonstrations",
@@ -283,7 +283,7 @@ const siteData = {
         {
           title: "Bag Transfer",
           summary:
-            "Walk towards the location of the cabinet and place the backpack on the top of the cabinet.",
+            "Navigate to the cabinet and place the backpack on top of it.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Failure trial: w/o view-align",
           posterText: "failure demo without view alignment which the robot early release the bag",
