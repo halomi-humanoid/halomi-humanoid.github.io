@@ -261,7 +261,7 @@ const siteData = {
         {
           title: "Bag Transfer",
           summary:
-            "Locate the cabinet, navigate to it, and place the backpack on top.",
+            "Locate the cabinet, navigate to it, and place the backpack on the top.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Bag Trial 1",
           posterText: "Successful in-domain rollout",
@@ -272,7 +272,7 @@ const siteData = {
         {
           title: "Bag Transfer",
           summary:
-            "Locate the cabinet, navigate to it, and place the backpack on top.",
+            "Locate the cabinet, navigate to it, and place the backpack on the top.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Bag Trial 2",
           posterText: "Successful in-domain rollout",
@@ -283,7 +283,7 @@ const siteData = {
         {
           title: "Bag Transfer",
           summary:
-            "Locate the cabinet, navigate to it, and place the backpack on top.",
+            "Locate the cabinet, navigate to it, and place the backpack on the top.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Successful OOD Trial",
           posterText: "The robot transfers the bag to a cabinet placed at a location unseen in the demonstrations",
@@ -294,7 +294,7 @@ const siteData = {
         {
           title: "Bag Transfer",
           summary:
-            "Locate the cabinet, navigate to it, and place the backpack on top.",
+            "Locate the cabinet, navigate to it, and place the backpack on the top.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Failure Case: w/o View Alignment",
           posterText: "Without view alignment, the robot releases the bag too early.",
