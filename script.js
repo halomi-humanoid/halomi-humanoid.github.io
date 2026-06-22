@@ -429,7 +429,7 @@ const siteData = {
   //   description:
   //     "Use this area for acknowledgements, funding sources, institutional support, collaborators, or open-source dependencies."
   // },
-citation: {
+  citation: {
     bibtex: `@article{zhao2026halomi,
   title={HALOMI: Learning Humanoid Loco-Manipulation with Active Perception from Human Demonstrations},
   author={Zhao, Zehui and Zhao, Yuxuan and Zhang, Gaojing and Liu, Chenxi and Zheng, Maolin and Lian, Wenzhao},
