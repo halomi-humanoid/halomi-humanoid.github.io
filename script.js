@@ -107,7 +107,7 @@ const siteData = {
           summary:
             "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
           accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
-          posterTitle: "Bread Pick-and-Place Rollouts",
+          posterTitle: "Pick Bread and Place Rollouts",
           posterText: "20 real-world rollouts with varied bread and target locations",
           tags: ["Grasping", "Placing"],
           embedUrl: "",
@@ -129,8 +129,8 @@ const siteData = {
           summary:
             "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
           accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
-          posterTitle: "Successful trial",
-          posterText: "Successful demo which the bread and disk are located in a ood location",
+          posterTitle: "OOD Pick Bread and Place",
+          posterText: "Bread and disk are placed at unseen locations.",
           tags: ["Grasping", "Placing"],
           embedUrl: "",
           videoUrl: "assets/videos/bread/bread_ood.mp4"
@@ -275,7 +275,7 @@ const siteData = {
             "Walk towards the location of the cabinet and place the backpack on the top of the cabinet.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Successful trial: OOD",
-          posterText: "Successful demo which the cabinet location is not inside the dataset",
+          posterText: "The robot transfers the bag to a cabinet placed at a location unseen in the demonstrations",
           tags: ["Navigation", "Walking", "Searching", "Placing"],
           embedUrl: "",
           videoUrl: "assets/videos/bag/bag_ood_clipped.mp4"
