@@ -105,7 +105,7 @@ const siteData = {
         {
           title: "Pick Bread and Place",
           summary:
-            "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
+            "Pick up the bread and place it at the target plate.",
           accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
           posterTitle: "Pick Bread and Place Rollouts",
           posterText: "20 real-world rollouts with varied bread and target locations",
@@ -127,7 +127,7 @@ const siteData = {
         {
           title: "Pick Bread and Place",
           summary:
-            "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
+            "Pick up the bread and place it at the target plate.",
           accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
           posterTitle: "OOD Pick Bread and Place",
           posterText: "Bread and plate are placed at unseen locations.",
@@ -166,7 +166,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
+            "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 1",
           posterText: "Towel transfer rollout with active perception",
@@ -177,7 +177,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
+            "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 2",
           posterText: "Towel transfer rollout with active perception",
@@ -188,7 +188,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
+            "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 3",
           posterText: "Towel transfer rollout with active perception",
@@ -199,7 +199,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
+            "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 4",
           posterText: "Towel transfer rollout with active perception",
@@ -210,7 +210,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
+            "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 5",
           posterText: "Towel transfer rollout with active perception",
@@ -221,7 +221,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
+            "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 6",
           posterText: "Towel transfer rollout with active perception",
