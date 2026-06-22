@@ -235,7 +235,7 @@ const siteData = {
             "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "active neck ablation",
-          posterText: "Without active neck control, the robot fails to complete the placement..",
+          posterText: "Without active neck control, the robot fails to complete the placement.",
           tags: ["Bimanual Manipulation", "Active Perception", "Whole-Body Coordination"],
           embedUrl: "",
           videoUrl: "assets/videos/active_neck_comparison.mp4?v=20260622-h264"
