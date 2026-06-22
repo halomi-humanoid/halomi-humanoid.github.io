@@ -48,7 +48,7 @@ const siteData = {
       videoUrl: "assets/videos/loco/walk.mp4"
     },
     {
-      title: "In-Place Hand Motion Tracking",
+      title: "Hand Motion Tracking",
       summary: "Tracking the upper hands motion while maintaing standing balance.",
       accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
       embedUrl: "",
