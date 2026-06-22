@@ -21,7 +21,7 @@ const siteData = {
     ],
     links: [
       { label: "Paper", note: "", icon: "./assets/icons/pdf.png", url: "./assets/halomi.pdf" },
-      { label: "arXiv", note: "", icon: "./assets/icons/arxiv.png", url: "#" },
+      { label: "arXiv", note: "", icon: "./assets/icons/arxiv.png", url: "https://arxiv.org/abs/2606.18772" },
       // { label: "Video", note: "", icon: "./assets/icons/youtube.svg", url: "#" },
       { label: "Code (Coming Soon)", note: "", icon: "./assets/icons/github.png", disabled: true },
       { label: "Dataset (Coming Soon)", note: "", icon: "./assets/icons/dataset.png", disabled: true }
@@ -166,7 +166,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel, then transfer it to the target basket.",
+            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 1",
           posterText: "Towel transfer rollout with active perception",
@@ -177,7 +177,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel, then transfer it to the target basket.",
+            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 2",
           posterText: "Towel transfer rollout with active perception",
@@ -188,7 +188,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel, then transfer it to the target basket.",
+            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 3",
           posterText: "Towel transfer rollout with active perception",
@@ -199,7 +199,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel, then transfer it to the target basket.",
+            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 4",
           posterText: "Towel transfer rollout with active perception",
@@ -210,7 +210,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel, then transfer it to the target basket.",
+            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 5",
           posterText: "Towel transfer rollout with active perception",
@@ -221,7 +221,7 @@ const siteData = {
         {
           title: "Transfer Towel to Basket",
           summary:
-            "Find and grasp the towel, then transfer it to the target basket.",
+            "Find and grasp the towel randomly placed on either side, then transfer it to the target basket.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 6",
           posterText: "Towel transfer rollout with active perception",
