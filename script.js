@@ -83,7 +83,7 @@ const siteData = {
       videoUrl: "assets/videos/loco/infeasible_motion.mp4"
     },
     {
-      title: "Squat",
+      title: "Squatting with Hand Tracking",
       summary: "Whole-body motion with squatting and hand motion without fall-off.",
       accent: "linear-gradient(140deg, rgba(37, 99, 235, 0.94), rgba(30, 64, 175, 0.88))",
       embedUrl: "",
