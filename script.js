@@ -107,9 +107,9 @@ const siteData = {
           summary:
             "Reach for the bread, pick it up, and place it at the target location with coordinated whole-body motion.",
           accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
-          posterTitle: "Successful trial",
-          posterText: "20 times real world rollouts with varied location and breads",
-          tags: ["Grasping", "Searching", "Placing"],
+          posterTitle: "Bread Pick-and-Place Rollouts",
+          posterText: "20 real-world rollouts with varied bread and target locations",
+          tags: ["Grasping", "Placing"],
           embedUrl: "",
           videoUrl: "assets/videos/bread/bread_rollout.mp4"
         },
@@ -131,7 +131,7 @@ const siteData = {
           accent: "linear-gradient(140deg, rgba(107, 33, 168, 0.94), rgba(76, 29, 149, 0.88))",
           posterTitle: "Successful trial",
           posterText: "Successful demo which the bread and disk are located in a ood location",
-          tags: ["Grasping", "Searching", "Placing"],
+          tags: ["Grasping", "Placing"],
           embedUrl: "",
           videoUrl: "assets/videos/bread/bread_ood.mp4"
         },
