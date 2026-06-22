@@ -169,8 +169,8 @@ const siteData = {
             "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 1",
-          posterText: "Towel transfer rollout with active perception",
-          tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
+          posterText: "Successful in-domain rollout",
+          tags: ["Bimanual Manipulation", "Active Perception", "Whole-Body Coordination"],
           embedUrl: "",
           videoUrl: "assets/videos/towel/towel2.mp4"
         },
@@ -180,8 +180,8 @@ const siteData = {
             "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 2",
-          posterText: "Towel transfer rollout with active perception",
-          tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
+          posterText: "Successful in-domain rollout",
+          tags: ["Bimanual Manipulation", "Active Perception", "Whole-Body Coordination"],
           embedUrl: "",
           videoUrl: "assets/videos/towel/towel3.mp4"
         },
@@ -191,8 +191,8 @@ const siteData = {
             "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 3",
-          posterText: "Towel transfer rollout with active perception",
-          tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
+          posterText: "Successful in-domain rollout",
+          tags: ["Bimanual Manipulation", "Active Perception", "Whole-Body Coordination"],
           embedUrl: "",
           videoUrl: "assets/videos/towel/towel4.mp4"
         },
@@ -202,8 +202,8 @@ const siteData = {
             "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 4",
-          posterText: "Towel transfer rollout with active perception",
-          tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
+          posterText: "Successful in-domain rollout",
+          tags: ["Bimanual Manipulation", "Active Perception", "Whole-Body Coordination"],
           embedUrl: "",
           videoUrl: "assets/videos/towel/towel5.mp4"
         },
@@ -213,8 +213,8 @@ const siteData = {
             "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 5",
-          posterText: "Towel transfer rollout with active perception",
-          tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
+          posterText: "Successful in-domain rollout",
+          tags: ["Bimanual Manipulation", "Active Perception", "Whole-Body Coordination"],
           embedUrl: "",
           videoUrl: "assets/videos/towel/towel6.mp4"
         },
@@ -224,8 +224,8 @@ const siteData = {
             "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Towel Trial 6",
-          posterText: "Towel transfer rollout with active perception",
-          tags: ["Dual-Arm Grasping", "Active Perception", "Turning", "Squat", "Placing"],
+          posterText: "Successful in-domain rollout",
+          tags: ["Bimanual Manipulation", "Active Perception", "Whole-Body Coordination"],
           embedUrl: "",
           videoUrl: "assets/videos/towel/towel7.mp4"
         },
@@ -250,44 +250,44 @@ const siteData = {
         {
           title: "Bag Transfer",
           summary:
-            "Navigate to the cabinet and place the backpack on top of it.",
+            "Locate the cabinet, navigate to it, and place the backpack on top.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Bag Trial 1",
-          posterText: "Bag transfer rollout with active perception",
-          tags: ["Navigation", "Walking", "Searching", "Placing"],
+          posterText: "Successful in-domain rollout",
+          tags: ["Navigation", "Active Perception"],
           embedUrl: "",
           videoUrl: "assets/videos/bag/bag1.mp4"
         },
         {
           title: "Bag Transfer",
           summary:
-            "Navigate to the cabinet and place the backpack on top of it.",
+            "Locate the cabinet, navigate to it, and place the backpack on top.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Bag Trial 2",
-          posterText: "Bag transfer rollout with active perception",
-          tags: ["Navigation", "Walking", "Searching", "Placing"],
+          posterText: "Successful in-domain rollout",
+          tags: ["Navigation", "Active Perception"],
           embedUrl: "",
           videoUrl: "assets/videos/bag/bag2.mp4"
         },
         {
           title: "Bag Transfer",
           summary:
-            "Navigate to the cabinet and place the backpack on top of it.",
+            "Locate the cabinet, navigate to it, and place the backpack on top.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
           posterTitle: "Successful trial: OOD",
           posterText: "The robot transfers the bag to a cabinet placed at a location unseen in the demonstrations",
-          tags: ["Navigation", "Walking", "Searching", "Placing"],
+          tags: ["Navigation", "Active Perception"],
           embedUrl: "",
           videoUrl: "assets/videos/bag/bag_ood_clipped.mp4"
         },
         {
           title: "Bag Transfer",
           summary:
-            "Navigate to the cabinet and place the backpack on top of it.",
+            "Locate the cabinet, navigate to it, and place the backpack on top.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
-          posterTitle: "Failure trial: w/o view-align",
-          posterText: "failure demo without view alignment which the robot early release the bag",
-          tags: ["Navigation", "Walking", "Searching", "Placing"],
+          posterTitle: "Failure Case: w/o View Alignment",
+          posterText: "Without view alignment, the robot releases the bag too early.",
+          tags: ["Navigation", "Active Perception"],
           embedUrl: "",
           videoUrl: "assets/videos/bag/bag_failure_view_align.mp4"
         },
@@ -303,8 +303,8 @@ const siteData = {
             "Toss the ball into the bin.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Tossing Trial 1",
-          posterText: "Toss the ball into the orange bin",
-          tags: ["Dynamic", "Walking", "Tossing"],
+          posterText: "Successful rollout",
+          tags: ["Dynamic Motion"],
           embedUrl: "",
           videoUrl: "assets/videos/tossing/tossing1.mp4"
         },
@@ -314,8 +314,8 @@ const siteData = {
             "Toss the ball into the bin.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Tossing Trial 2",
-          posterText: "Toss the ball into the orange bin",
-          tags: ["Dynamic", "Walking", "Tossing"],
+          posterText: "Successful rollout",
+          tags: ["Dynamic Motion"],
           embedUrl: "",
           videoUrl: "assets/videos/tossing/tossing2.mp4"
         },
@@ -325,8 +325,8 @@ const siteData = {
             "Toss the ball into the bin.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Tossing Trial 3",
-          posterText: "Toss the ball into the orange bin",
-          tags: ["Dynamic", "Walking", "Tossing"],
+          posterText: "Successful rollout",
+          tags: ["Dynamic Motion"],
           embedUrl: "",
           videoUrl: "assets/videos/tossing/tossing3.mp4"
         },
@@ -336,8 +336,8 @@ const siteData = {
             "Toss the ball into the bin.",
           accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
           posterTitle: "Tossing Trial 4",
-          posterText: "Toss the ball into the orange bin",
-          tags: ["Dynamic", "Walking", "Tossing"],
+          posterText: "Successful rollout",
+          tags: ["Dynamic Motion"],
           embedUrl: "",
           videoUrl: "assets/videos/tossing/tossing4.mp4"
         },
@@ -347,8 +347,8 @@ const siteData = {
             "Squat to grasp the bottle, then place it inside the backpack on the cabinet.",
           accent: "linear-gradient(140deg, rgba(8, 145, 178, 0.94), rgba(30, 41, 59, 0.88))",
           posterTitle: "Bottle Transfer",
-          posterText: "Deep-squat grasp-place rollout",
-          tags: ["Squat", "Grasping", "Turning", "Placing"],
+          posterText: "Successful rollout",
+          tags: ["Deep Squating", "Whole-Body Coordination", "Long-Horizon Manipulation", "Active Perception"],
           embedUrl: "",
           videoUrl: "assets/videos/squat.mp4"
         },
