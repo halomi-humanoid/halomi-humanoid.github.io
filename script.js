@@ -84,7 +84,7 @@ const siteData = {
     },
     {
       title: "Squat",
-      summary: "Whole-body motion with squating and hand motion without fall-off.",
+      summary: "Whole-body motion with squatting and hand motion without fall-off.",
       accent: "linear-gradient(140deg, rgba(37, 99, 235, 0.94), rgba(30, 64, 175, 0.88))",
       embedUrl: "",
       videoUrl: "assets/videos/loco/squat_hand_moving.mp4"
@@ -229,6 +229,17 @@ const siteData = {
           embedUrl: "",
           videoUrl: "assets/videos/towel/towel7.mp4"
         },
+        {
+          title: "Transfer Towel to Basket",
+          summary:
+            "Grasp the towel and transfer it into the basket, which is randomly placed on either side.",
+          accent: "linear-gradient(140deg, rgba(14, 116, 144, 0.94), rgba(15, 23, 42, 0.88))",
+          posterTitle: "active neck ablation",
+          posterText: "Without active neck control, the robot fails to complete the placement..",
+          tags: ["Bimanual Manipulation", "Active Perception", "Whole-Body Coordination"],
+          embedUrl: "",
+          videoUrl: "assets/videos/active_neck_comparison.mp4?v=20260622-h264"
+        },
         
       ]
     },
@@ -274,7 +285,7 @@ const siteData = {
           summary:
             "Locate the cabinet, navigate to it, and place the backpack on top.",
           accent: "linear-gradient(140deg, rgba(15, 118, 110, 0.95), rgba(31, 36, 48, 0.9))",
-          posterTitle: "Successful trial: OOD",
+          posterTitle: "Successful OOD Trial",
           posterText: "The robot transfers the bag to a cabinet placed at a location unseen in the demonstrations",
           tags: ["Navigation", "Active Perception"],
           embedUrl: "",
@@ -348,7 +359,7 @@ const siteData = {
           accent: "linear-gradient(140deg, rgba(8, 145, 178, 0.94), rgba(30, 41, 59, 0.88))",
           posterTitle: "Bottle Transfer",
           posterText: "Successful rollout",
-          tags: ["Deep Squating", "Whole-Body Coordination", "Long-Horizon Manipulation", "Active Perception"],
+          tags: ["Deep Squatting", "Whole-Body Coordination", "Long-Horizon Manipulation", "Active Perception"],
           embedUrl: "",
           videoUrl: "assets/videos/squat.mp4"
         },
