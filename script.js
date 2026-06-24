@@ -238,7 +238,7 @@ const siteData = {
           posterText: "Without active neck control, the robot fails to complete the placement.",
           tags: ["Bimanual Manipulation", "Active Perception", "Whole-Body Coordination"],
           embedUrl: "",
-          videoUrl: "assets/videos/active_neck_comparison.mp4?v=20260622-h264"
+          videoUrl: "assets/videos/active_neck_comparison_hd_20260624.mp4"
         },
         
       ]
