@@ -10,7 +10,7 @@ const siteData = {
       { name: "Gaojing Zhang", url: "#", affiliations: [1,2] },
       { name: "Chenxi Liu", url: "#", affiliations: [3] },
       { name: "Maolin Zheng", url: "#", affiliations: [3] },
-      { name: "Wenzhao Lian", url: "#", affiliations: [1], notes: ["†"] }
+      { name: "Wenzhao Lian", url: "https://lianwenzhao.github.io/", affiliations: [1], notes: ["†"] }
     ],
     affiliations: [
       { id: 1, label: "Shanghai Jiao Tong University", type: "institution" },
